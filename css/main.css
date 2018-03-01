@@ -11,39 +11,31 @@ a {
   text-decoration: none;
 }
 
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-
-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.col-sm-4 {
+  margin-bottom: 40px;
 }
 
-h1 {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-#info {
-  border-width: thick;
-  border-style: solid;
-  border-color: black;
+.col-sm-7 {
+  margin-bottom: 40px;
+  margin-right: 10px;
 }
 
 
-#products {
-  border-width: thick;
-  border-style: solid;
-  border-color: orange;
+ /*Products*/
 
-}
+ iframe {
+   width:75%;
+ }
 
+ #products .container {
+   display: flex;
+   justify-content:space-between;
+   width: 100%;
+   margin-bottom: 15px;
 
-.item {
+ }
+
+ .item {
   border-width: thin;
   border-style: solid;
   border-color: green;
@@ -56,34 +48,30 @@ h1 {
 
 }
 
-#products .container {
-  display: flex;
-  justify-content:space-between;
-  width: 100%;
-  margin-bottom: 15px;
-
-}
-
-#form {
-  border-width: medium;
-  border-style: solid;
-  border-color: blue;
+.zoom:hover {
+    transform: scale(1.25);
 }
 
 
-#fun {
-  border-width: medium;
-  border-style: solid;
-  border-color: yellow;
-}
+
+/*--Fun--*/
 
 #fun .container {
 display: flex;
 flex-direction: column;
 }
 
+#fun h2{
+  text-align: center;
+  font-style: italic;
+}
+
+#fun img:hover {
+  opacity: 0.5;
+}
+
 .borderbox {
-  border-width: medium;
+  border-width:thin;
   border-style: solid;
   border-color: black;
   padding: 10px;
@@ -92,8 +80,54 @@ flex-direction: column;
 }
 
 
-
-
+/*footer*/
 footer {
 text-align: center;
+margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+
+.col-sm-4 img {
+  width: 85%;
+  height: auto;
+}
+
+
+
+#products .container {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item {
+  margin-bottom: 5px;
+  height: 150px;
+  width: 340px;
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
+}
+
+body {
+  font-size: 16px;
+}
+
+.blockquote-reverse {
+  font-size: 14px;
+}
+
+#about .btn {
+margin-left: 25px;
+}
+
+iframe {
+  width: 320px;
+  text-align: center;
+}
+
+
 }
